@@ -1,0 +1,78 @@
+.max-width {
+  max-width: 1400px;
+}
+
+.container-general-transfer {
+  max-height: 25rem;
+  min-height: 25rem;
+}
+
+.container-button {
+  margin: 33px 10px 10px 10px;
+}
+
+#button-transfer,
+#button-transfer-teen,
+#button-cancel-teen {
+  color: white;
+  border-radius: 15px;
+}
+
+#button-transfer-teen,
+#button-cancel-teen {
+  margin: 10px 10px 10px 10px;
+}
+
+#button-transfer {
+  background-color: #9ADE7B;
+}
+
+.container-form {
+  width: 40%;
+  display: flex;
+  margin-left: 45rem;
+  margin-top: -17rem;
+}
+
+.container-functions-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#information,
+#pasos,
+#paso1,
+#paso2,
+#paso3,
+#paso4 {
+  margin: 1.5px 0 0 1.5px;
+}
+
+.container-image-dissapear {
+  display: flex;
+  margin-left: 44rem;
+  margin-top: -16.5rem;
+}
+
+#image-references {
+  width: 32rem;
+  border-radius: 30px;
+}
+
+.container-steps p {
+  text-align: left;
+}
+
+a {
+  text-decoration: underline;
+  color: blue;
+}
+
+.spacing {
+  margin: 5px 0 0 5px;
+}
+
+#button-cancel-teen {
+  background-color: #FF8080;
+}

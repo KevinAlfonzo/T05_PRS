@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Asignación" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8b47b92d-9fbe-450f-aa3b-abe956007aa6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM program_assignments_view]]>
+	</queryString>
+	<field name="id_assignments" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_assignments"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_assignments"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="program_assignments_view"/>
+	</field>
+	<field name="adolescent_dni" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="adolescent_dni"/>
+		<property name="com.jaspersoft.studio.field.label" value="adolescent_dni"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="program_assignments_view"/>
+	</field>
+	<field name="names" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="names"/>
+		<property name="com.jaspersoft.studio.field.label" value="names"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="program_assignments_view"/>
+	</field>
+	<field name="program_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="program_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="program_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="program_assignments_view"/>
+	</field>
+	<field name="program_duration" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="program_duration"/>
+		<property name="com.jaspersoft.studio.field.label" value="program_duration"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="program_assignments_view"/>
+	</field>
+	<field name="assignment_date" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="assignment_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="assignment_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="program_assignments_view"/>
+	</field>
+	<field name="program_status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="program_status"/>
+		<property name="com.jaspersoft.studio.field.label" value="program_status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="program_assignments_view"/>
+	</field>
+	<group name="id_assignments">
+		<groupExpression><![CDATA[$F{id_assignments}]]></groupExpression>
+	</group>
+	<group name="adolescent_dni">
+		<groupExpression><![CDATA[$F{adolescent_dni}]]></groupExpression>
+	</group>
+	<group name="names">
+		<groupExpression><![CDATA[$F{names}]]></groupExpression>
+	</group>
+	<group name="program_name">
+		<groupExpression><![CDATA[$F{program_name}]]></groupExpression>
+	</group>
+	<group name="program_duration">
+		<groupExpression><![CDATA[$F{program_duration}]]></groupExpression>
+	</group>
+	<group name="assignment_date">
+		<groupExpression><![CDATA[$F{assignment_date}]]></groupExpression>
+	</group>
+	<group name="program_status">
+		<groupExpression><![CDATA[$F{program_status}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="128" y="9" width="308" height="61" uuid="3f7f06f1-d980-4c95-b1b9-74c44b3a7121"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font fontName="Arial Black" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE ASIGNACIÓN DE PROGRAMAS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="50" y="3" width="70" height="72" uuid="59965575-3e34-4df9-ad8b-7bcdcf31db5d"/>
+				<imageExpression><![CDATA["C:/Users/USER/Downloads/licitaciones-pronacej.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="370" y="7" width="110" height="30" uuid="e6ff8ea5-0a9a-4ee4-9eca-e689e26b1152"/>
+				<textElement verticalAlignment="Justified">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Fecha: ]]></text>
+			</staticText>
+			<textField pattern="MMMM d, yyyy">
+				<reportElement x="420" y="10" width="115" height="30" uuid="6faa1c07-7fb2-49b3-98c5-14dca9333e8b"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="37" width="138" height="20" forecolor="#FFFFFF" backcolor="#1783C4" uuid="493f99f3-7ce5-4c8b-a08e-f67873152c4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADOLESCENTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="138" y="37" width="141" height="20" forecolor="#FFFFFF" backcolor="#1783C4" uuid="fb838c36-a675-4d8b-911b-c34d7ee9339c"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DNI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="279" y="37" width="138" height="20" forecolor="#FFFFFF" backcolor="#1783C4" uuid="f2a76558-323f-414c-9321-26425e75dc94"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROGRAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="417" y="37" width="138" height="20" forecolor="#FFFFFF" backcolor="#1783C4" uuid="770d7218-aaa8-42e4-b994-9d601c93547d"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="138" y="5" width="141" height="30" uuid="361554eb-5b2c-490b-9836-aa1d8f905449"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{adolescent_dni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="5" width="138" height="30" uuid="c2354053-5f72-4283-a460-e3f3d12e721b"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{program_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="5" width="138" height="30" uuid="995f6f1d-3837-443d-a02e-42c103800589"/>
+				<textElement textAlignment="Left" verticalAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{names}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="5" width="135" height="30" uuid="5ddeb1e5-b5c6-4b5b-a039-f71021f58d61"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{assignment_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="70" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="500" y="40" width="100" height="30" uuid="a2ce5713-203d-40b1-b4e2-77ba9de3dc97"/>
+				<textElement textAlignment="Left" verticalAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="10" y="30" width="545" height="1" uuid="7ff7abb1-6234-4272-8056-4efcd3ee27e4"/>
+			</line>
+			<textField>
+				<reportElement x="400" y="40" width="100" height="30" uuid="ac91b673-5846-43ad-afa0-47c8985862b1"/>
+				<textElement textAlignment="Right" verticalAlignment="Justified">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

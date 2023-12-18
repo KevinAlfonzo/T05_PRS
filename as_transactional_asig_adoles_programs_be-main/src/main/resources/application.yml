@@ -1,0 +1,18 @@
+server:
+  port: 8086
+
+spring:
+  r2dbc:
+    url: r2dbc:postgres://localhost:5432/ms-programs
+    username: postgres
+    password: 2!p!vaILP
+    pool:
+      enabled: true
+      initial-size: 1
+      max-size: 1
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
